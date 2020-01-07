@@ -29,7 +29,13 @@ public class SelectionSort {
         System.out.println("Input array: " + Arrays.toString(anArray));
         return anArray;
     }
-
+    
+    /**
+     * Sort array using selection sort
+     * 
+     * @param intArray unsorted array input from user
+     * @return sorted array using selection sort
+     */
     public static int[] selectionSort(int[] intArray) {
         int minIndex, temp;
         for (int i = 0; i <= intArray.length-2; i++) {
