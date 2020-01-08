@@ -5,6 +5,7 @@
  */
 package Sorting;
 
+import common_package.IntegerArray;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -13,22 +14,6 @@ import java.util.Scanner;
  * @author piya
  */
 public class BubbleSort {
-    
-    /**
-     * Accept an integer array input from user
-     *
-     * @return anArray input from user
-     */
-    public static int[] getIntegerArray(int size) {
-        int[] anArray = new int[size];
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter integer array elements: ");
-        for (int i = 0; i < anArray.length; i++) {
-            anArray[i] = sc.nextInt();
-        }
-        System.out.println("Input array: " + Arrays.toString(anArray));
-        return anArray;
-    }
     
     /**
      * Sort an array using bubble sort
@@ -53,6 +38,6 @@ public class BubbleSort {
     }
     
     public static void main(String[] args) {
-        System.out.println("Sorted Array: " + Arrays.toString(bubbleSort(getIntegerArray(5))));
+        System.out.println("Sorted Array: " + Arrays.toString(bubbleSort(IntegerArray.getArray(5))));
     }
 }
