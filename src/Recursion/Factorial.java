@@ -7,7 +7,7 @@ package Recursion;
 
 /**
  *
- * @author piya
+ * @author priya
  */
 public class Factorial {
     public int factorial(int n){
